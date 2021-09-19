@@ -99,6 +99,12 @@ In ``DataStore.idr`` and ``DataStoreHoles.idr``, add ``import Data.String`` and
 
 In ``TypeFuns.idr`` add ``import Data.String``
 
+In `DataStore.idr`, listing 6.9, `data Schema` must be explicitly typed for the
+file to type-check with a hole. Replace it with:
+
+.. code-block:: idris
+   data Schema : Type
+
 Chapter 7
 ---------
 
